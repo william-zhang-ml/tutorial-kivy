@@ -18,6 +18,7 @@ class AppGrid(GridLayout):
     inputs = ObjectProperty(None)
 
     def _pressed_button_handler(self) -> None:
+        """Print form info and clear form. """
         first = self.inputs.first_name.text
         last = self.inputs.last_name.text
         email = self.inputs.email.text
