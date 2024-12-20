@@ -2,6 +2,7 @@
 Poke counter application.
 This app shows the number of times the user has poked it.
 """
+import time
 from kivy.app import App
 from kivy.properties import NumericProperty, ObjectProperty
 from kivy.uix.widget import Widget
@@ -25,6 +26,7 @@ class Counter(Widget):
 class MainApp(App):
     """Main application class. """
     def build(self) -> None:
+        time.sleep(0.5)  # delay for presplash screen
         return Counter()
 
 
